@@ -28,7 +28,14 @@ class MyGame(arcade.Window):
         y = 300
         self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
         self.animal_sprite.center_x = x
-        self.animal_sprite.center_y = y
+        self.animal_sprite.center_y = x
+        self.animal_list.append(self.animal_sprite)
+        animal = 'bear'
+        x = 475
+        y = 300
+        self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = x
         self.animal_list.append(self.animal_sprite)
         
 
